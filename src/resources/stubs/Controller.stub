@@ -26,7 +26,7 @@ class {{modelName}}Controller extends Controller
     {
         ${{modelNameSingularLowerCase}} = {{modelName}}::findOrFail($id);
 
-        return response(['data', ${{modelNameSingularLowerCase}} ], 200);
+        return response(['data' => ${{modelNameSingularLowerCase}} ], 200);
     }
 
     public function update({{modelName}}Request $request, $id)
